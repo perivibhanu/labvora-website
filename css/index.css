@@ -1,0 +1,240 @@
+/* ===== CSS DESIGN SYSTEM - LABVORA ===== */
+
+/* --- CSS Reset & Variables --- */
+:root {
+    /* Brand Colors */
+    --clr-primary: #E63946;
+    --clr-primary-dark: #C5303C;
+    --clr-primary-light: #FF4D5A;
+    --clr-primary-glow: rgba(230, 57, 70, 0.3);
+
+    /* Accent Colors */
+    --clr-gold: #F4A261;
+    --clr-blue: #457B9D;
+    --clr-blue-light: #5C9CC0;
+    --clr-green: #2A9D8F;
+    --clr-purple: #7B68EE;
+    --clr-orange: #E76F51;
+
+    /* Neutrals - Dark Theme */
+    --clr-bg-primary: #0A0A0F;
+    --clr-bg-secondary: #111118;
+    --clr-bg-tertiary: #1A1A24;
+    --clr-bg-card: #16161F;
+    --clr-bg-card-hover: #1E1E2A;
+    --clr-bg-elevated: #1F1F2C;
+
+    /* Text */
+    --clr-text-primary: #F0F0F5;
+    --clr-text-secondary: #A0A0B5;
+    --clr-text-tertiary: #6B6B80;
+    --clr-text-muted: #4A4A60;
+
+    /* Borders */
+    --clr-border: rgba(255, 255, 255, 0.06);
+    --clr-border-light: rgba(255, 255, 255, 0.1);
+    --clr-border-hover: rgba(255, 255, 255, 0.15);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #E63946 0%, #FF6B6B 50%, #E63946 100%);
+    --gradient-hero: linear-gradient(180deg, #0A0A0F 0%, #111118 50%, #0A0A0F 100%);
+    --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+    --gradient-text: linear-gradient(135deg, #E63946 0%, #FF8A80 50%, #E63946 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 40px rgba(230, 57, 70, 0.15);
+    --shadow-glow-strong: 0 0 60px rgba(230, 57, 70, 0.25);
+
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+    --fs-4xl: 3.25rem;
+    --fs-5xl: 4rem;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    --lh-tight: 1.1;
+    --lh-snug: 1.25;
+    --lh-normal: 1.5;
+    --lh-relaxed: 1.75;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+    --space-5xl: 8rem;
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-full: 999px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 400ms ease;
+    --transition-spring: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* Layout */
+    --container-max: 1200px;
+    --navbar-height: 72px;
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--navbar-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    line-height: var(--lh-normal);
+    color: var(--clr-text-primary);
+    background-color: var(--clr-bg-primary);
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* --- Utility Classes --- */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+}
+
+.text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section {
+    padding: var(--space-5xl) 0;
+    position: relative;
+}
+
+.section--dark {
+    background-color: var(--clr-bg-secondary);
+}
+
+.section__header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-4xl);
+}
+
+.section__tag {
+    display: inline-block;
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--clr-primary);
+    background: rgba(230, 57, 70, 0.1);
+    border: 1px solid rgba(230, 57, 70, 0.2);
+    padding: var(--space-xs) var(--space-lg);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-lg);
+}
+
+.section__title {
+    font-family: var(--font-display);
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
+    margin-bottom: var(--space-lg);
+}
+
+.section__subtitle {
+    font-size: var(--fs-md);
+    color: var(--clr-text-secondary);
+    line-height: var(--lh-relaxed);
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--clr-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--clr-bg-tertiary);
+    border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-text-tertiary);
+}
+
+/* --- Selection --- */
+::selection {
+    background: var(--clr-primary);
+    color: white;
+}

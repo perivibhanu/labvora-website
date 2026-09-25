@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labvora | LabVIEW Training (CLAD & CLD) & Project Development</title>
+    <meta name="description" content="Labvora provides professional CLAD & CLD certification training, custom LabVIEW project development, consulting, hardware integration (DAQ, FPGA, Real-Time), and TestStand automation solutions. Innovate. Automate. Elevate.">
+    <meta name="keywords" content="LabVIEW, CLAD, CLD, LabVIEW Training, LabVIEW Projects, NI, National Instruments, DAQ, FPGA, TestStand, Automation, Chennai">
+    <meta name="author" content="Labvora">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Labvora | LabVIEW Training & Project Development">
+    <meta property="og:description" content="Professional CLAD & CLD certification training and custom LabVIEW solutions. Innovate. Automate. Elevate.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://labvora.in">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ===== Preloader ===== -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__logo">Lab<span>vor</span>a</div>
+            <div class="preloader__bar"><div class="preloader__bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- ===== Navigation ===== -->
+    <header id="navbar" class="navbar">
+        <div class="container navbar__inner">
+            <a href="#home" class="navbar__logo" aria-label="Labvora Home">
+                Lab<span>vor</span>a
+            </a>
+            <nav class="navbar__nav" id="nav-menu" aria-label="Main Navigation">
+                <a href="#home" class="navbar__link active">Home</a>
+                <a href="#about" class="navbar__link">About</a>
+                <a href="#services" class="navbar__link">Services</a>
+                <a href="#training" class="navbar__link">Training</a>
+                <a href="#testimonials" class="navbar__link">Testimonials</a>
+                <a href="#blog" class="navbar__link">Blog</a>
+                <a href="#contact" class="navbar__link">Contact</a>
+            </nav>
+            <div class="navbar__actions">
+                <a href="#contact" class="btn btn--primary btn--sm" id="nav-cta">Get Started</a>
+                <button class="navbar__hamburger" id="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Mobile Menu Overlay ===== -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-menu__nav">
+            <a href="#home" class="mobile-menu__link">Home</a>
+            <a href="#about" class="mobile-menu__link">About</a>
+            <a href="#services" class="mobile-menu__link">Services</a>
+            <a href="#training" class="mobile-menu__link">Training</a>
+            <a href="#testimonials" class="mobile-menu__link">Testimonials</a>
+            <a href="#blog" class="mobile-menu__link">Blog</a>
+            <a href="#contact" class="mobile-menu__link">Contact</a>
+            <a href="#contact" class="btn btn--primary btn--lg mobile-menu__cta">Get Started</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section id="home" class="hero">
+            <div class="hero__bg">
+                <div class="hero__grid-pattern"></div>
+                <div class="hero__glow hero__glow--1"></div>
+                <div class="hero__glow hero__glow--2"></div>
+                <div class="hero__particles" id="particles-container"></div>
+            </div>
+            <div class="container hero__content">
+                <div class="hero__badge" data-animate="fade-up">
+                    <span class="hero__badge-dot"></span>
+                    NI Alliance Partner · Chennai, India
+                </div>
+                <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+                    Master <span class="text-gradient">LabVIEW</span>.<br>
+                    Build the <span class="text-gradient">Future</span>.
+                </h1>
+                <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+                    Professional CLAD & CLD certification training, custom project development, 
+                    and end-to-end LabVIEW automation solutions.
+                </p>
+                <div class="hero__tagline" data-animate="fade-up" data-delay="250">
+                    <span class="hero__tagline-line"></span>
+                    Innovate. Automate. Elevate.
+                    <span class="hero__tagline-line"></span>
+                </div>
+                <div class="hero__actions" data-animate="fade-up" data-delay="300">
+                    <a href="#training" class="btn btn--primary btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        Explore Training
+                    </a>
+                    <a href="#services" class="btn btn--outline btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        Our Services
+                    </a>
+                </div>
+                <div class="hero__stats" data-animate="fade-up" data-delay="400">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="150">0</span>+
+                        <span class="hero__stat-label">Students Trained</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="50">0</span>+
+                        <span class="hero__stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="95">0</span>%
+                        <span class="hero__stat-label">Pass Rate</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="5">0</span>+
+                        <span class="hero__stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span>Scroll</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">About Us</span>
+                    <h2 class="section__title">Empowering Engineers with <span class="text-gradient">LabVIEW Expertise</span></h2>
+                    <p class="section__subtitle">We bridge the gap between LabVIEW learners and industry-ready professionals through world-class training and project solutions.</p>
+                </div>
+                <div class="about__grid">
+                    <div class="about__story" data-animate="fade-right">
+                        <h3 class="about__heading">Our Story</h3>
+                        <p>Labvora was founded with a single mission: to make LabVIEW expertise accessible and to help engineers and organizations unlock the full potential of NI's powerful platform.</p>
+                        <p>Based in Chennai, India, our team of certified LabVIEW professionals brings years of hands-on industry experience across test & measurement, automation, data acquisition, and embedded systems.</p>
+                        <p>Whether you're preparing for your CLAD/CLD certification or need a custom automation solution, we're your trusted LabVIEW partner.</p>
+                    </div>
+                    <div class="about__cards" data-animate="fade-left">
+                        <div class="about__card">
+                            <div class="about__card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <h4>Our Mission</h4>
+                            <p>To deliver excellence in LabVIEW education and engineering solutions, empowering the next generation of automation engineers.</p>
+                        </div>
+                        <div class="about__card">
+                            <div class="about__card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                            <h4>Our Vision</h4>
+                            <p>To become the leading LabVIEW training and development partner in India, recognized for quality, innovation, and student success.</p>
+                        </div>
+                        <div class="about__card">
+                            <div class="about__card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <h4>Our Values</h4>
+                            <p>Integrity, hands-on learning, continuous innovation, and a commitment to every student's and client's success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICES SECTION ===== -->
+        <section id="services" class="services section section--dark">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">What We Offer</span>
+                    <h2 class="section__title">Comprehensive <span class="text-gradient">LabVIEW Solutions</span></h2>
+                    <p class="section__subtitle">From certification training to full-scale project development, we cover every aspect of the LabVIEW ecosystem.</p>
+                </div>
+                <div class="services__grid">
+                    <!-- Service 1: CLAD Training -->
+                    <div class="service-card" data-animate="fade-up" data-delay="0">
+                        <div class="service-card__icon-wrap service-card__icon-wrap--red">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <h3 class="service-card__title">CLAD Certification Training</h3>
+                        <p class="service-card__desc">Ace the Certified LabVIEW Associate Developer exam with our structured, hands-on training program covering all exam domains.</p>
+                        <ul class="service-card__features">
+                            <li>Complete syllabus coverage</li>
+                            <li>Practice exams & mock tests</li>
+                            <li>Online & classroom modes</li>
+                            <li>Doubt-clearing sessions</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">Enquire Now →</a>
+                    </div>
+                    <!-- Service 2: CLD Training -->
+                    <div class="service-card service-card--featured" data-animate="fade-up" data-delay="100">
+                        <div class="service-card__badge">Popular</div>
+                        <div class="service-card__icon-wrap service-card__icon-wrap--gold">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15l-2 5l-5-3v-6l7-9 7 9v6l-5 3z"/><path d="M9 12h6"/></svg>
+                        </div>
+                        <h3 class="service-card__title">CLD Certification Training</h3>
+                        <p class="service-card__desc">Elevate your LabVIEW skills to developer level with our intensive, project-based CLD preparation program.</p>
+                        <ul class="service-card__features">
+                            <li>Advanced LabVIEW architecture</li>
+                            <li>State machines & design patterns</li>
+                            <li>Timed practice sessions</li>
+                            <li>1-on-1 mentorship available</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">Enquire Now →</a>
+                    </div>
+                    <!-- Service 3: Project Development -->
+                    <div class="service-card" data-animate="fade-up" data-delay="200">
+                        <div class="service-card__icon-wrap service-card__icon-wrap--blue">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 8l3 3-3 3"/><path d="M13 14h4"/></svg>
+                        </div>
+                        <h3 class="service-card__title">Custom Project Development</h3>
+                        <p class="service-card__desc">End-to-end LabVIEW application development tailored to your specific industrial and research requirements.</p>
+                        <ul class="service-card__features">
+                            <li>Test & measurement systems</li>
+                            <li>Data acquisition applications</li>
+                            <li>Process automation</li>
+                            <li>Custom UI/UX design</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">Enquire Now →</a>
+                    </div>
+                    <!-- Service 4: Consulting -->
+                    <div class="service-card" data-animate="fade-up" data-delay="0">
+                        <div class="service-card__icon-wrap service-card__icon-wrap--green">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="service-card__title">LabVIEW Consulting</h3>
+                        <p class="service-card__desc">Expert guidance on architecture, code review, performance optimization, and best practices for your LabVIEW projects.</p>
+                        <ul class="service-card__features">
+                            <li>Architecture review</li>
+                            <li>Code optimization</li>
+                            <li>Migration & upgrades</li>
+                            <li>Technical advisory</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">Enquire Now →</a>
+                    </div>
+                    <!-- Service 5: Hardware Integration -->
+                    <div class="service-card" data-animate="fade-up" data-delay="100">
+                        <div class="service-card__icon-wrap service-card__icon-wrap--purple">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+                        </div>
+                        <h3 class="service-card__title">Hardware Integration</h3>
+                        <p class="service-card__desc">Seamless integration with NI hardware — DAQ, FPGA, Real-Time, PXI, and third-party instruments.</p>
+                        <ul class="service-card__features">
+                            <li>DAQ system design</li>
+                            <li>FPGA programming</li>
+                            <li>Real-Time applications</li>
+                            <li>Instrument driver development</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">Enquire Now →</a>
+                    </div>
+                    <!-- Service 6: TestStand -->
+                    <div class="service-card" data-animate="fade-up" data-delay="200">
+                        <div class="service-card__icon-wrap service-card__icon-wrap--orange">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                        </div>
+                        <h3 class="service-card__title">TestStand Solutions</h3>
+                        <p class="service-card__desc">Production-ready test automation sequences with NI TestStand for manufacturing and quality assurance.</p>
+                        <ul class="service-card__features">
+                            <li>Test sequence development</li>
+                            <li>Custom operator interfaces</li>
+                            <li>Database & report integration</li>
+                            <li>Deployment & maintenance</li>
+                        </ul>
+                        <a href="#contact" class="service-card__link">Enquire Now →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRAINING SECTION ===== -->
+        <section id="training" class="training section">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">Certification Programs</span>
+                    <h2 class="section__title">Your Path to <span class="text-gradient">LabVIEW Certification</span></h2>
+                    <p class="section__subtitle">Structured, expert-led programs designed to get you certified with confidence — available online and in-person.</p>
+                </div>
+                <div class="training__tabs">
+                    <button class="training__tab active" data-tab="clad" id="tab-clad">CLAD Program</button>
+                    <button class="training__tab" data-tab="cld" id="tab-cld">CLD Program</button>
+                </div>
+                <div class="training__content">
+                    <!-- CLAD Tab -->
+                    <div class="training__panel active" id="panel-clad">
+                        <div class="training__panel-grid">
+                            <div class="training__info">
+                                <h3>Certified LabVIEW Associate Developer</h3>
+                                <p>Our CLAD preparation course is designed for engineers and students who want to validate their foundational LabVIEW skills. We cover all exam objectives with hands-on exercises and real exam simulations.</p>
+                                <div class="training__details-grid">
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                        <div>
+                                            <strong>Duration</strong>
+                                            <span>4-6 Weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                        <div>
+                                            <strong>Mode</strong>
+                                            <span>Online & Classroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+                                        <div>
+                                            <strong>Batch Size</strong>
+                                            <span>Max 15 Students</span>
+                                        </div>
+                                    </div>
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                                        <div>
+                                            <strong>Certificate</strong>
+                                            <span>Completion + Exam Prep</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Curriculum Highlights</h4>
+                                <div class="training__curriculum">
+                                    <div class="training__module">
+                                        <span class="training__module-num">01</span>
+                                        <span>LabVIEW Environment & Data Types</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">02</span>
+                                        <span>Loops, Structures & Flow Control</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">03</span>
+                                        <span>Arrays, Clusters & String Operations</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">04</span>
+                                        <span>File I/O & Error Handling</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">05</span>
+                                        <span>SubVI Design & Modular Programming</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">06</span>
+                                        <span>Exam Strategies & Mock Tests</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn--primary btn--lg">Enroll Now</a>
+                            </div>
+                            <div class="training__visual">
+                                <div class="training__certificate-card">
+                                    <div class="training__cert-badge">CLAD</div>
+                                    <div class="training__cert-title">Certified LabVIEW<br>Associate Developer</div>
+                                    <div class="training__cert-ni">NI Certification</div>
+                                    <div class="training__cert-line"></div>
+                                    <div class="training__cert-stats">
+                                        <div><strong>40</strong> Questions</div>
+                                        <div><strong>60</strong> Minutes</div>
+                                        <div><strong>70%</strong> Pass Mark</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CLD Tab -->
+                    <div class="training__panel" id="panel-cld">
+                        <div class="training__panel-grid">
+                            <div class="training__info">
+                                <h3>Certified LabVIEW Developer</h3>
+                                <p>The CLD is a practical exam that tests your ability to design and build a complete LabVIEW application. Our intensive program focuses on architecture, design patterns, and timed practice to ensure you're exam-ready.</p>
+                                <div class="training__details-grid">
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                        <div>
+                                            <strong>Duration</strong>
+                                            <span>6-8 Weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                        <div>
+                                            <strong>Mode</strong>
+                                            <span>Online & Classroom</span>
+                                        </div>
+                                    </div>
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+                                        <div>
+                                            <strong>Batch Size</strong>
+                                            <span>Max 10 Students</span>
+                                        </div>
+                                    </div>
+                                    <div class="training__detail">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                                        <div>
+                                            <strong>Prerequisite</strong>
+                                            <span>CLAD Certified</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Curriculum Highlights</h4>
+                                <div class="training__curriculum">
+                                    <div class="training__module">
+                                        <span class="training__module-num">01</span>
+                                        <span>LabVIEW Architecture & Design Patterns</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">02</span>
+                                        <span>State Machines & Event-Driven Programming</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">03</span>
+                                        <span>Producer-Consumer & Queued Message Handler</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">04</span>
+                                        <span>Advanced File I/O & Data Management</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">05</span>
+                                        <span>UI Design & User Experience Best Practices</span>
+                                    </div>
+                                    <div class="training__module">
+                                        <span class="training__module-num">06</span>
+                                        <span>Timed Full-Exam Simulations (4-hour)</span>
+                                    </div>
+                                </div>
+                                <a href="#contact" class="btn btn--primary btn--lg">Enroll Now</a>
+                            </div>
+                            <div class="training__visual">
+                                <div class="training__certificate-card training__certificate-card--cld">
+                                    <div class="training__cert-badge training__cert-badge--cld">CLD</div>
+                                    <div class="training__cert-title">Certified LabVIEW<br>Developer</div>
+                                    <div class="training__cert-ni">NI Certification</div>
+                                    <div class="training__cert-line"></div>
+                                    <div class="training__cert-stats">
+                                        <div><strong>1</strong> Project</div>
+                                        <div><strong>4</strong> Hours</div>
+                                        <div><strong>70%</strong> Pass Mark</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY CHOOSE US ===== -->
+        <section class="why-us section section--dark">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">Why Labvora</span>
+                    <h2 class="section__title">What Sets Us <span class="text-gradient">Apart</span></h2>
+                </div>
+                <div class="why-us__grid">
+                    <div class="why-us__item" data-animate="fade-up" data-delay="0">
+                        <div class="why-us__number">01</div>
+                        <h4>Industry-Experienced Instructors</h4>
+                        <p>Learn from certified professionals with years of real-world LabVIEW experience in test, automation, and R&D.</p>
+                    </div>
+                    <div class="why-us__item" data-animate="fade-up" data-delay="100">
+                        <div class="why-us__number">02</div>
+                        <h4>Hands-On Project-Based Learning</h4>
+                        <p>Every concept is reinforced with practical exercises and real-world projects — no passive learning here.</p>
+                    </div>
+                    <div class="why-us__item" data-animate="fade-up" data-delay="200">
+                        <div class="why-us__number">03</div>
+                        <h4>Flexible Learning Modes</h4>
+                        <p>Choose between live online sessions, self-paced content, or in-person classroom training in Chennai.</p>
+                    </div>
+                    <div class="why-us__item" data-animate="fade-up" data-delay="300">
+                        <div class="why-us__number">04</div>
+                        <h4>Post-Training Support</h4>
+                        <p>We don't stop at certification. Get continued mentorship, doubt-clearing, and career guidance after your course.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS SECTION ===== -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">Testimonials</span>
+                    <h2 class="section__title">What Our <span class="text-gradient">Students Say</span></h2>
+                    <p class="section__subtitle">Hear from engineers who transformed their careers with Labvora's training programs.</p>
+                </div>
+                <div class="testimonials__carousel" id="testimonials-carousel">
+                    <div class="testimonials__track" id="testimonials-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p class="testimonial-card__text">"Labvora's CLAD training was exceptional. The structured approach and mock exams gave me the confidence I needed. I cleared CLAD on my first attempt!"</p>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">RK</div>
+                                <div>
+                                    <strong>Rajesh Kumar</strong>
+                                    <span>Test Engineer, Chennai</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p class="testimonial-card__text">"The CLD preparation was intense but incredibly well-organized. The timed practice sessions and 1-on-1 feedback from the instructor made all the difference."</p>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">PS</div>
+                                <div>
+                                    <strong>Priya Sharma</strong>
+                                    <span>Automation Engineer, Bangalore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p class="testimonial-card__text">"We hired Labvora for a custom DAQ project and they delivered beyond expectations. Professional, responsive, and technically excellent."</p>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">AV</div>
+                                <div>
+                                    <strong>Arun Venkat</strong>
+                                    <span>Project Manager, Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__stars">★★★★★</div>
+                            <p class="testimonial-card__text">"As someone transitioning from a different domain, Labvora's LabVIEW training made the complex concepts easy to grasp. Highly recommended for beginners!"</p>
+                            <div class="testimonial-card__author">
+                                <div class="testimonial-card__avatar">MN</div>
+                                <div>
+                                    <strong>Meena Nair</strong>
+                                    <span>R&D Engineer, Pune</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__nav">
+                        <button class="testimonials__arrow" id="testimonial-prev" aria-label="Previous testimonial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                        <div class="testimonials__dots" id="testimonial-dots"></div>
+                        <button class="testimonials__arrow" id="testimonial-next" aria-label="Next testimonial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BLOG SECTION ===== -->
+        <section id="blog" class="blog section section--dark">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">Resources</span>
+                    <h2 class="section__title">LabVIEW <span class="text-gradient">Insights & Tips</span></h2>
+                    <p class="section__subtitle">Stay updated with the latest LabVIEW tutorials, tips, and industry insights from our experts.</p>
+                </div>
+                <div class="blog__grid">
+                    <article class="blog-card" data-animate="fade-up" data-delay="0">
+                        <div class="blog-card__image">
+                            <div class="blog-card__image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+                            </div>
+                            <span class="blog-card__category">CLAD Tips</span>
+                        </div>
+                        <div class="blog-card__body">
+                            <time class="blog-card__date">September 20, 2026</time>
+                            <h3 class="blog-card__title">Top 10 Tips to Pass the CLAD Exam on Your First Attempt</h3>
+                            <p class="blog-card__excerpt">Master the essential strategies and avoid common pitfalls that trip up most CLAD candidates...</p>
+                            <a href="#" class="blog-card__link">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card" data-animate="fade-up" data-delay="100">
+                        <div class="blog-card__image">
+                            <div class="blog-card__image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                            </div>
+                            <span class="blog-card__category">Design Patterns</span>
+                        </div>
+                        <div class="blog-card__body">
+                            <time class="blog-card__date">September 15, 2026</time>
+                            <h3 class="blog-card__title">Understanding State Machines in LabVIEW: A Complete Guide</h3>
+                            <p class="blog-card__excerpt">Learn how to implement robust state machine architectures for scalable LabVIEW applications...</p>
+                            <a href="#" class="blog-card__link">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card" data-animate="fade-up" data-delay="200">
+                        <div class="blog-card__image">
+                            <div class="blog-card__image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+                            </div>
+                            <span class="blog-card__category">Hardware</span>
+                        </div>
+                        <div class="blog-card__body">
+                            <time class="blog-card__date">September 10, 2026</time>
+                            <h3 class="blog-card__title">Getting Started with NI DAQ in LabVIEW: Beginner's Walkthrough</h3>
+                            <p class="blog-card__excerpt">A step-by-step guide to configuring and programming your first data acquisition system with LabVIEW...</p>
+                            <a href="#" class="blog-card__link">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA BANNER ===== -->
+        <section class="cta-banner">
+            <div class="cta-banner__bg">
+                <div class="cta-banner__glow"></div>
+            </div>
+            <div class="container cta-banner__content" data-animate="fade-up">
+                <h2>Ready to Level Up Your LabVIEW Skills?</h2>
+                <p>Join hundreds of engineers who trust Labvora for their LabVIEW training and project needs.</p>
+                <div class="cta-banner__actions">
+                    <a href="#contact" class="btn btn--white btn--lg">Get in Touch</a>
+                    <a href="https://wa.me/917032055712" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section__header" data-animate="fade-up">
+                    <span class="section__tag">Get in Touch</span>
+                    <h2 class="section__title">Let's <span class="text-gradient">Connect</span></h2>
+                    <p class="section__subtitle">Have a question about our training programs or need a custom LabVIEW solution? We'd love to hear from you.</p>
+                </div>
+                <div class="contact__grid">
+                    <div class="contact__info" data-animate="fade-right">
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <a href="mailto:testing@labvora.in">testing@labvora.in</a>
+                            </div>
+                        </div>
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <a href="tel:+917032055712">+91 7032055712</a>
+                            </div>
+                        </div>
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <span>Chennai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                        <div class="contact__info-card">
+                            <div class="contact__info-icon contact__info-icon--whatsapp">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/917032055712" target="_blank" rel="noopener noreferrer">Chat with us</a>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps Embed -->
+                        <div class="contact__map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.23481668584!2d79.87933028906249!3d13.047985950000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1695000000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="200" 
+                                style="border:0; border-radius: 12px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Labvora Location - Chennai, India">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contact__form-wrap" data-animate="fade-left">
+                        <form class="contact__form" id="contact-form">
+                            <h3 class="contact__form-title">Send Us a Message</h3>
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-email">Email *</label>
+                                    <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-phone">Phone *</label>
+                                    <input type="tel" id="contact-phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-interest">I'm Interested In *</label>
+                                <select id="contact-interest" name="interest" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="clad">CLAD Training</option>
+                                    <option value="cld">CLD Training</option>
+                                    <option value="project">Custom Project Development</option>
+                                    <option value="consulting">LabVIEW Consulting</option>
+                                    <option value="hardware">Hardware Integration (DAQ/FPGA/RT)</option>
+                                    <option value="teststand">TestStand Solutions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" required placeholder="Tell us about your requirements..." rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--lg btn--full" id="contact-submit">
+                                <span>Send Message</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </button>
+                            <p class="contact__form-note">We typically respond within 24 hours.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">Lab<span>vor</span>a</a>
+                    <p class="footer__tagline">Innovate. Automate. Elevate.</p>
+                    <p class="footer__desc">Your trusted partner for LabVIEW training, certification, and custom project development.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="footer__social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#training">Training</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer__links-col">
+                    <h4>Services</h4>
+                    <a href="#services">CLAD Training</a>
+                    <a href="#services">CLD Training</a>
+                    <a href="#services">Project Development</a>
+                    <a href="#services">LabVIEW Consulting</a>
+                    <a href="#services">Hardware Integration</a>
+                    <a href="#services">TestStand Solutions</a>
+                </div>
+                <div class="footer__links-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:testing@labvora.in">testing@labvora.in</a>
+                    <a href="tel:+917032055712">+91 7032055712</a>
+                    <a href="https://wa.me/917032055712" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    <span>Chennai, India</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Labvora. All rights reserved.</p>
+                <p>Innovate. Automate. Elevate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917032055712" target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

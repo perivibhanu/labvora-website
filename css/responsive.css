@@ -1,0 +1,244 @@
+/* ===== RESPONSIVE STYLES - LABVORA ===== */
+
+/* ---- Tablet (max-width: 1024px) ---- */
+@media (max-width: 1024px) {
+    :root {
+        --fs-5xl: 3rem;
+        --fs-4xl: 2.5rem;
+        --fs-3xl: 2rem;
+    }
+
+    .section {
+        padding: var(--space-4xl) 0;
+    }
+
+    .navbar__nav {
+        display: none;
+    }
+
+    .navbar__hamburger {
+        display: flex;
+    }
+
+    .navbar__actions .btn {
+        display: none;
+    }
+
+    /* Hero */
+    .hero__stats {
+        gap: var(--space-lg);
+        padding: var(--space-lg);
+    }
+
+    .hero__stat-number {
+        font-size: var(--fs-xl);
+    }
+
+    /* About */
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    /* Services */
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Training */
+    .training__panel-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .training__visual {
+        order: -1;
+    }
+
+    .training__certificate-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Why Us */
+    .why-us__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        min-width: calc(50% - var(--space-xl) / 2);
+    }
+
+    /* Contact */
+    .contact__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+/* ---- Mobile (max-width: 768px) ---- */
+@media (max-width: 768px) {
+    :root {
+        --fs-5xl: 2.25rem;
+        --fs-4xl: 2rem;
+        --fs-3xl: 1.75rem;
+        --fs-2xl: 1.5rem;
+        --navbar-height: 64px;
+    }
+
+    .container {
+        padding: 0 var(--space-lg);
+    }
+
+    .section__header {
+        margin-bottom: var(--space-2xl);
+    }
+
+    /* Hero */
+    .hero__badge {
+        font-size: 0.7rem;
+    }
+
+    .hero__subtitle {
+        font-size: var(--fs-base);
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .hero__actions .btn {
+        width: 100%;
+    }
+
+    .hero__stats {
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-lg);
+    }
+
+    .hero__stat {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    .hero__stat-number {
+        font-size: var(--fs-xl);
+    }
+
+    .hero__stat-label {
+        margin-top: 0;
+    }
+
+    .hero__stat-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .hero__scroll-indicator {
+        display: none;
+    }
+
+    .hero__tagline {
+        font-size: 0.7rem;
+    }
+
+    /* Services */
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Training */
+    .training__tabs {
+        flex-wrap: wrap;
+    }
+
+    .training__tab {
+        flex: 1;
+        text-align: center;
+    }
+
+    .training__details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Why Us */
+    .why-us__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Blog */
+    .blog__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        min-width: 100%;
+    }
+
+    /* CTA */
+    .cta-banner__actions {
+        flex-direction: column;
+    }
+
+    .cta-banner__actions .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Form */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: var(--space-sm);
+        text-align: center;
+    }
+}
+
+/* ---- Small Mobile (max-width: 480px) ---- */
+@media (max-width: 480px) {
+    :root {
+        --fs-5xl: 1.85rem;
+        --fs-4xl: 1.6rem;
+        --fs-3xl: 1.5rem;
+    }
+
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    .service-card {
+        padding: var(--space-xl);
+    }
+
+    .contact__form-wrap {
+        padding: var(--space-lg);
+    }
+
+    .training__certificate-card {
+        padding: var(--space-2xl) var(--space-lg);
+    }
+
+    .training__cert-stats {
+        gap: var(--space-lg);
+    }
+}
